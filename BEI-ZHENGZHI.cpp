@@ -32,7 +32,7 @@ int main()
 	sprintf(nt, "%d/%02d/%02d %02d:%02d",tp1->tm_year+1900,tp1->tm_mon+1,tp1->tm_mday,tp1->tm_hour,tp1->tm_min);
 	olog << "------------------------------------" << endl << nt << endl << endl;
 	int tot = 0;
-	while(a = myrand() % n + 1)
+	while(a = myrand() % titn + 1)
 		if(tot >= n) break;
 		else if(!ed[a] && a <= n)
 		{
